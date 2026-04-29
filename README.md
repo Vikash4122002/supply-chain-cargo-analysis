@@ -1,96 +1,124 @@
 # 🚢 Supply Chain Cargo Analysis Dashboard
-### by Vikash Kumar | Data Analyst
+### 👨‍💻 Vikash Kumar | Data Analyst
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![SQL](https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=amazon-dynamodb&logoColor=white)](https://en.wikipedia.org/wiki/SQL)
 [![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)]()
 
-> **End-to-end data analysis project** — Measuring the impact of supply chain disruptions on cargo flow across 4 major Indian ports using PostgreSQL, SQL, and Power BI.
+---
+
+> 🚀 End-to-End Data Analysis Project  
+Analyzing supply chain disruption impact on Indian port cargo using PostgreSQL, SQL, and Power BI.
 
 ---
 
-## 🎥 Live Demo
-👉 **[Watch Full Dashboard Walkthrough on YouTube](https://youtu.be/vhWI5-4j-qk)**
+# 🎥 Live Demo
+
+👉 https://youtu.be/vhWI5-4j-qk
 
 ---
 
-## 📌 Problem Statement
+# 📌 Problem Statement
 
-Supply chain disruptions cause significant shifts in cargo flow at major ports. This project investigates:
-- How did cargo volume change **before vs after** disruption?
+- How cargo changed before vs after disruption?
 - Which ports were most affected?
-- What cargo types saw the biggest impact?
-- How did **incoming vs outgoing** trade balance shift?
+- Which cargo types changed the most?
+- How did incoming vs outgoing trade shift?
 
 ---
 
-## 📊 Dashboard Screenshots
+# 📊 Dashboard Preview
 
-### 🔹 Main KPI Overview
-![KPI Card](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/KPI_CARD.png)
+## 🔹 KPI Overview
+![KPI](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/KPI_CARD.png)
 
-### 🔹 Supply Chain Cargo Analysis
-![Supply Chain](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/SUPPLY%20CHAIN%20CARGO%20ANALYSIS.png)
+## 🔹 Supply Chain Overview
+![Supply](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/SUPPLY%20CHAIN%20CARGO%20ANALYSIS.png)
 
-### 🔹 Cargo Type Distribution
-![Cargo Type](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/CARGO%20TYPE.png)
+## 🔹 Cargo Type
+![Cargo](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/CARGO%20TYPE.png)
 
-### 🔹 Cargo Type Percentage After Disruption
-![Cargo Percentage](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/CARGO%20TYPE%20PERCENTAGE(AFTER%20DISRUPTION).png)
+## 🔹 Incoming vs Outgoing
+![Flow](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/INCOMING%20VS%20OUTGOING%20ANALYSIS.png)
 
-### 🔹 Incoming vs Outgoing Analysis
-![Incoming Outgoing](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/INCOMING%20VS%20OUTGOING%20ANALYSIS.png)
+## 🔹 Trade Balance
+![Trade](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/TRADE%20BALANCE%20AFTER%20DISRUPTION%20PORT%20BY%20PORT.png)
 
-### 🔹 Incoming vs Outgoing Before and After
-![Before After](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/INCOMING%20VS%20OUTGOING(AFTER%20AND%20BEFORE).png)
-
-### 🔹 Port Cargo Before vs After
-![Port Cargo](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/PORT%20CARGO(AFTER%20VS%20BEFORE).png)
-
-### 🔹 Trade Balance by Port
-![Trade Balance](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/TRADE%20BALANCE%20AFTER%20DISRUPTION%20PORT%20BY%20PORT.png)
-
-### 🔹 Flow Disruption Impact
-![Flow Disruption](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/FLOW%20DISRUPTION%20.png)
+## 🔹 Disruption Impact
+![Impact](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/FLOW%20DISRUPTION%20.png)
 
 ---
 
-## 🔑 Key Insights
+# 📄 Full Report
 
-| Metric | Before Disruption | After Disruption | Change |
-|--------|:-----------------:|:----------------:|:------:|
-| Total Cargo | 20.54M | 21.03M | ▲ +2.4% |
-| Incoming Cargo | 13M | 12M | ▼ -7.6% |
-| Outgoing Cargo | 8M | 9M | ▲ +12.5% |
-| Tanker Volume | 4M | 5M | ▲ +25% |
-
-### 📍 Port-wise Summary
-
-| Port | After Disruption | Before Disruption | Total |
-|------|:----------------:|:-----------------:|:-----:|
-| Mumbai | 16,448,780 | 15,676,836 | 32,125,616 |
-| Madras | 2,383,775 | 3,284,572 | 5,668,347 |
-| Kochi | 2,135,287 | 1,506,508 | 3,641,795 |
-| Kolkata | 63,068 | 76,436 | 139,504 |
-
-### 🏆 Top Findings
-- **Mumbai** handled the highest cargo volume across all ports
-- **Container cargo** dominates at **65.62%** of total cargo mix
-- **Tanker volume** surged by **25%** post-disruption
-- **Outgoing cargo** grew while **incoming cargo** declined
-- Overall cargo grew **2.4%** despite the disruption event
+👉 https://github.com/Vikash4122002/supply-chain-cargo-analysis/raw/main/04_Outputs/Reports/SUPPLY%20CHAIN%20CARGO%20ANALYSIS.pdf
 
 ---
 
-## 🛠 Tech Stack
+# 🔑 Key Insights
 
-| Tool | Purpose |
-|------|---------|
-| PostgreSQL | Database design and data storage |
-| SQL | Data cleaning, joins, aggregation |
-| Power BI | Interactive dashboards and visualization |
+- Total cargo increased by **2.4%**
+- Incoming cargo decreased
+- Outgoing cargo increased
+- Tanker cargo increased significantly
+- Mumbai handled highest cargo
 
 ---
 
-## 📁 Project Structure
+# 📍 Port Insights
+
+- Mumbai → Highest volume
+- Madras → Decline
+- Kochi → Growth
+- Kolkata → Lowest activity
+
+---
+
+# 🛠 Tech Stack
+
+- PostgreSQL
+- SQL
+- Power BI
+
+---
+
+# 📁 Project Structure
+
+📦 supply-chain-cargo-analysis  
+┣ 📂 00_Documentation  
+┣ 📂 01_Data  
+┣ 📂 02_SQL  
+┣ 📂 03_PowerBI  
+┣ 📂 04_Outputs/Reports  
+┣ 📂 05_Presentation/Screenshots  
+┗ 📄 README.md  
+
+---
+
+# 💡 What I Learned
+
+- SQL data analysis
+- Dashboard building in Power BI
+- Real-world data storytelling
+
+---
+
+# 👨‍💻 About Me
+
+Vikash Kumar  
+Aspiring Data Analyst  
+
+🔗 LinkedIn: https://linkedin.com/in/YOUR-LINK  
+🔗 GitHub: https://github.com/Vikash4122002  
+📧 Email: your-email@gmail.com  
+
+---
+
+# 🚀 Result
+
+Recruiter can:
+✔ See dashboard instantly  
+✔ Watch video  
+✔ Download report  
+✔ Understand project in 30 seconds  
