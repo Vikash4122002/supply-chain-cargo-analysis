@@ -21,10 +21,13 @@ Analyzing supply chain disruption impact on Indian port cargo using PostgreSQL, 
 
 # 📌 Problem Statement
 
+This project analyzes how supply chain disruption affects cargo flow across major Indian ports.
+
+### Key Questions:
 - How cargo changed before vs after disruption?
-- Which ports were most affected?
-- Which cargo types changed the most?
-- How did incoming vs outgoing trade shift?
+- Which ports were most impacted?
+- Which cargo types were affected?
+- How did trade balance shift?
 
 ---
 
@@ -34,15 +37,15 @@ Analyzing supply chain disruption impact on Indian port cargo using PostgreSQL, 
 ![KPI](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/KPI_CARD.png)
 
 ## 🔹 Supply Chain Overview
-![Supply](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/SUPPLY%20CHAIN%20CARGO%20ANALYSIS.png)
+![Dashboard](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/SUPPLY%20CHAIN%20CARGO%20ANALYSIS.png)
 
-## 🔹 Cargo Type
+## 🔹 Cargo Type Analysis
 ![Cargo](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/CARGO%20TYPE.png)
 
 ## 🔹 Incoming vs Outgoing
 ![Flow](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/INCOMING%20VS%20OUTGOING%20ANALYSIS.png)
 
-## 🔹 Trade Balance
+## 🔹 Trade Balance by Port
 ![Trade](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/TRADE%20BALANCE%20AFTER%20DISRUPTION%20PORT%20BY%20PORT.png)
 
 ## 🔹 Disruption Impact
@@ -50,36 +53,36 @@ Analyzing supply chain disruption impact on Indian port cargo using PostgreSQL, 
 
 ---
 
-# 📄 Full Report
+# 📄 📥 Full Report (Click to Download)
 
-👉 https://github.com/Vikash4122002/supply-chain-cargo-analysis/raw/main/04_Outputs/Reports/SUPPLY%20CHAIN%20CARGO%20ANALYSIS.pdf
+👉 https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/04_Outputs/Reports/SUPPLY%20CHAIN%20CARGO%20ANALYSIS.pdf
 
 ---
 
 # 🔑 Key Insights
 
-- Total cargo increased by **2.4%**
-- Incoming cargo decreased
-- Outgoing cargo increased
-- Tanker cargo increased significantly
-- Mumbai handled highest cargo
+✔ Total cargo increased by **2.4%**  
+✔ Incoming cargo decreased  
+✔ Outgoing cargo increased  
+✔ Tanker cargo increased significantly  
+✔ Mumbai handled highest cargo  
 
 ---
 
-# 📍 Port Insights
+# 📍 Port-Level Insights
 
-- Mumbai → Highest volume
-- Madras → Decline
-- Kochi → Growth
-- Kolkata → Lowest activity
+- 🚢 Mumbai → Highest cargo volume
+- 📉 Madras → Significant decline
+- 📈 Kochi → Strong growth
+- ⚠️ Kolkata → Minimal contribution
 
 ---
 
 # 🛠 Tech Stack
 
-- PostgreSQL
-- SQL
-- Power BI
+- PostgreSQL (Database)
+- SQL (Analysis)
+- Power BI (Visualization)
 
 ---
 
@@ -98,9 +101,10 @@ Analyzing supply chain disruption impact on Indian port cargo using PostgreSQL, 
 
 # 💡 What I Learned
 
-- SQL data analysis
-- Dashboard building in Power BI
-- Real-world data storytelling
+- Built complete data pipeline (CSV → SQL → BI)
+- Performed real-world analysis using SQL
+- Created interactive dashboards
+- Converted data into business insights
 
 ---
 
@@ -109,16 +113,25 @@ Analyzing supply chain disruption impact on Indian port cargo using PostgreSQL, 
 Vikash Kumar  
 Aspiring Data Analyst  
 
-🔗 LinkedIn: https://linkedin.com/in/YOUR-LINK  
 🔗 GitHub: https://github.com/Vikash4122002  
-📧 Email: your-email@gmail.com  
+📧 Email: vikash111107@gmail.com  
 
 ---
 
-# 🚀 Result
+# 🚀 Why This Project Stands Out
+
+✔ End-to-end pipeline  
+✔ Real-world scenario  
+✔ Business insights  
+✔ Clean dashboard  
+✔ Recruiter-friendly  
+
+---
+
+# 🎯 Final Impact
 
 Recruiter can:
 ✔ See dashboard instantly  
-✔ Watch video  
+✔ Watch demo video  
 ✔ Download report  
-✔ Understand project in 30 seconds  
+✔ Understand project in < 30 seconds  
