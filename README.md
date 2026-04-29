@@ -1,128 +1,158 @@
-# 🚢 Supply Chain Cargo Analysis Dashboard
-### 👨‍💻 Vikash Kumar | Data Analyst
+cat > README.md << 'EOF'
+# 🚢 Supply Chain Cargo Analysis Dashboard  
+### 👨‍💻 Vikash Kumar | Data Analyst  
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![SQL](https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=amazon-dynamodb&logoColor=white)](https://en.wikipedia.org/wiki/SQL)
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)]()
 
 ---
 
-> 🚀 End-to-End Data Analysis Project  
-Analyzing supply chain disruption impact on Indian port cargo.
+## 🚀 Project Overview
+
+End-to-End Data Analysis Project analyzing **Supply Chain Cargo Flow across major Indian ports** using:
+
+- PostgreSQL
+- SQL
+- Power BI
+- DAX
+
+This project focuses on **before vs after disruption analysis** to uncover real-world supply chain insights.
 
 ---
 
-# 🎥 Live Demo
+## 🎥 Live Demo
+
 👉 https://youtu.be/vhWI5-4j-qk
 
 ---
 
-# 📊 Dashboard Preview
+## 📊 Dashboard Preview
 
-![KPI](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/KPI_CARD.png)
+### 🔹 KPI Overview
+![KPI](./05_Presentation/Screenshots/KPI_CARD.png)
 
-![Dashboard](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/SUPPLY%20CHAIN%20CARGO%20ANALYSIS.png)
+### 🔹 Supply Chain Overview
+![Supply](./05_Presentation/Screenshots/SUPPLY%20CHAIN%20CARGO%20ANALYSIS.png)
 
-![Flow](https://raw.githubusercontent.com/Vikash4122002/supply-chain-cargo-analysis/main/05_Presentation/Screenshots/INCOMING%20VS%20OUTGOING%20ANALYSIS.png)
+### 🔹 Cargo Type Analysis
+![Cargo](./05_Presentation/Screenshots/CARGO%20TYPE.png)
 
----
+### 🔹 Incoming vs Outgoing
+![Flow](./05_Presentation/Screenshots/INCOMING%20VS%20OUTGOING%20ANALYSIS.png)
 
-# 📄 Full Report
+### 🔹 Trade Balance by Port
+![Trade](./05_Presentation/Screenshots/TRADE%20BALANCE%20AFTER%20DISRUPTION%20PORT%20BY%20PORT.png)
 
-👉 [View & Download Report](https://github.com/Vikash4122002/supply-chain-cargo-analysis/blob/main/04_Outputs/Reports/SUPPLY%20CHAIN%20CARGO%20ANAYLSIS.pdf)
-
-
----
-
-## 🛠️ TECH STACK
-
-| Layer | Technology |
-|-------|------------|
-| **Database** | PostgreSQL 16 |
-| **Query Language** | SQL (CTEs, Window Functions, Aggregations) |
-| **Visualization** | Power BI Desktop |
-| **Analytics** | DAX Measures |
-| **Version Control** | Git & GitHub |
-
----
-📊 DAX MEASURES USED
-dax
-// Key Measures in Dashboard
-
-| **Total Cargo = SUM(port_cargo[total_cargo]) |
-
-| **Total Before = CALCULATE([Total Cargo], port_cargo[period] = "Before_Disruption") |
-
-| **Total After = CALCULATE([Total Cargo], port_cargo[period] = "After_Disruption") |
-
-| **Growth % = DIVIDE([Total After] - [Total Before], [Total Before]) * 100 |
-
-| **Incoming After = CALCULATE([Total Cargo], port_cargo[flow_type] = "Incoming", port_cargo[period] = "After_Disruption") |
-
-| **Outgoing After = CALCULATE([Total Cargo], port_cargo[flow_type] = "Outgoing", port_cargo[period] = "After_Disruption") |
-
-| **Container % After = DIVIDE([Container After], [Total After]) * 100 |
-
-| **Tanker % After = DIVIDE([Tanker After], [Total After]) * 100 |
+### 🔹 Disruption Impact
+![Impact](./05_Presentation/Screenshots/FLOW%20DISRUPTION%20.png)
 
 ---
 
-## 🔑 KEY INSIGHTS
+## 📄 Download Full Report
 
-### 📈 Overall Impact
-| Metric | Before | After | Change |
-|--------|--------|-------|--------|
-| Total Cargo | 20.54M | 21.03M | **+2.4% ▲** |
-| Incoming | 13M | 12M | **-7.7% ▼** |
-| Outgoing | 8M | 9M | **+12.5% ▲** |
-
-### 🚢 Cargo Type Impact
-| Cargo Type | Before | After | Change | Insight |
-|------------|--------|-------|--------|---------|
-| **Container** | 13.48M | 13.80M | +2.4% | Supply chain backbone |
-| **Tanker** | 1.77M | 1.82M | +2.8% | Energy demand resilient |
-| **Dry Bulk** | 5.29M | 5.41M | +2.3% | Industrial needs steady |
-
-### 📍 Port Performance
-| Port | Before | After | Growth | Impact Level |
-|------|--------|-------|--------|---------------|
-| Mumbai | 8.2M | 8.4M | +2.4% | 🇮🇳 Most Active |
-| Chennai | 6.5M | 6.6M | +1.5% | Stable |
-| Kolkata | 3.2M | 3.1M | -3.1% | Slight Decline |
-| Kochi | 3.6M | 2.9M | -19.4% | Most Impacted |
+👉 [Download PDF](./04_Outputs/Reports/SUPPLY%20CHAIN%20CARGO%20ANALYSIS.pdf)
 
 ---
 
-## 💡 BUSINESS IMPACT & RECOMMENDATIONS
+## 📊 Key Insights
 
-### What This Analysis Reveals
+- Total cargo increased by **2.4%**
+- Incoming cargo **decreased**
+- Outgoing cargo **increased**
+- Tanker cargo showed **growth (energy demand stable)**
+- Mumbai handled the **highest cargo volume**
 
-| Finding | Business Implication |
-|---------|---------------------|
-| **Cargo shifted from incoming to outgoing** | Ports prioritized exports post-disruption |
-| **Container cargo most affected** | Supply chain disruption visible |
-| **Tanker cargo remained stable** | Energy demand is resilient |
-| **Kochi most impacted (-19%)** | Geographically vulnerable port |
-| **Mumbai maintained growth (+2.4%)** | Major port with better infrastructure |
+---
 
+## 📍 Port Insights
 
-### 🎯 Actionable Recommendations
-| **Diversify container routes away from most impacted ports |
+- Mumbai → Highest activity
+- Chennai → Stable performance
+- Kochi → Most impacted
+- Kolkata → Lowest volume
 
-| **Increase buffer stock for container cargo |
+---
 
-| **Monitor tanker supply chains - they're critical |
+## 📊 DAX Measures Used
 
-| **Regional port contingency planning |
+\`\`\`DAX
+Total Cargo = SUM(port_cargo[cargo_value])
 
-| **Real-time cargo tracking during disruptions |
+Cargo Before =
+CALCULATE(
+    SUM(port_cargo[cargo_value]),
+    port_cargo[period] = "Before_Disruption"
+)
 
+Cargo After =
+CALCULATE(
+    SUM(port_cargo[cargo_value]),
+    port_cargo[period] = "After_Disruption"
+)
 
-# 👨‍💻 About Me
+Growth % =
+DIVIDE(
+    [Cargo After] - [Cargo Before],
+    [Cargo Before],
+    0
+)
 
-Vikash Kumar  
+Incoming Cargo =
+CALCULATE(
+    SUM(port_cargo[cargo_value]),
+    port_cargo[flow_type] = "Incoming"
+)
+
+Outgoing Cargo =
+CALCULATE(
+    SUM(port_cargo[cargo_value]),
+    port_cargo[flow_type] = "Outgoing"
+)
+
+Trade Balance =
+[Incoming Cargo] - [Outgoing Cargo]
+\`\`\`
+
+---
+
+## 🛠 Tech Stack
+
+- PostgreSQL
+- SQL
+- Power BI
+- DAX
+- GitHub
+
+---
+
+## 📁 Project Structure
+
+📦 supply-chain-cargo-analysis  
+┣ 📂 00_Documentation  
+┣ 📂 01_Data  
+┣ 📂 02_SQL  
+┣ 📂 03_PowerBI  
+┣ 📂 04_Outputs/Reports  
+┣ 📂 05_Presentation/Screenshots  
+┗ 📄 README.md  
+
+---
+
+## 💡 What I Learned
+
+- SQL-based data analysis  
+- Dashboard design using Power BI  
+- DAX for business metrics  
+- Data storytelling  
+
+---
+
+## 👨‍💻 About Me
+
+**Vikash Kumar**  
+Aspiring Data Analyst  
+
 📧 vikash111107@gmail.com  
 🔗 https://github.com/Vikash4122002  
-
----
-
