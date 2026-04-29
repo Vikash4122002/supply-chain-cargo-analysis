@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # 🚢 Supply Chain Cargo Analysis Dashboard  
 ### 👨‍💻 Vikash Kumar | Data Analyst  
 
@@ -9,26 +8,44 @@ cat > README.md << 'EOF'
 
 ---
 
-## 🚀 Project Overview
- 
-End-to-End Data Analysis Project analyzing **Supply Chain Cargo Flow across major Indian ports** using:
+## 🚀 PROJECT OVERVIEW
 
+End-to-End Data Analysis Project analyzing **Supply Chain Cargo Flow across major Indian ports**.
+
+📌 Built using:
 - PostgreSQL
 - SQL
 - Power BI
 - DAX
 
-This project focuses on **before vs after disruption analysis** to uncover real-world supply chain insights.
+📌 Focus:
+Understanding **before vs after disruption impact** on cargo movement.
 
 ---
 
-## 🎥 Live Demo
+## 🎥 LIVE DEMO (CLICK IMAGE 👇)
 
-👉 https://youtu.be/vhWI5-4j-qk
+[![Watch Demo](https://img.youtube.com/vi/vhWI5-4j-qk/maxresdefault.jpg)](https://youtu.be/vhWI5-4j-qk)
 
 ---
 
-## 📊 Dashboard Preview
+## 📌 BUSINESS PROBLEM
+
+Supply chain disruptions affect:
+- Trade flow
+- Port efficiency
+- Cargo distribution
+
+👉 This project answers:
+
+- How cargo changed before vs after disruption?
+- Which ports were most impacted?
+- Which cargo types changed the most?
+- How did import/export balance shift?
+
+---
+
+## 📊 DASHBOARD PREVIEW
 
 ### 🔹 KPI Overview
 ![KPI](./05_Presentation/Screenshots/KPI_CARD.png)
@@ -42,7 +59,7 @@ This project focuses on **before vs after disruption analysis** to uncover real-
 ### 🔹 Incoming vs Outgoing
 ![Flow](./05_Presentation/Screenshots/INCOMING%20VS%20OUTGOING%20ANALYSIS.png)
 
-### 🔹 Trade Balance by Port
+### 🔹 Trade Balance
 ![Trade](./05_Presentation/Screenshots/TRADE%20BALANCE%20AFTER%20DISRUPTION%20PORT%20BY%20PORT.png)
 
 ### 🔹 Disruption Impact
@@ -50,34 +67,31 @@ This project focuses on **before vs after disruption analysis** to uncover real-
 
 ---
 
-## 📄 Download Full Report
+## 📄 FULL REPORT (DOWNLOAD)
 
 👉 [Download PDF](./04_Outputs/Reports/SUPPLY%20CHAIN%20CARGO%20ANALYSIS.pdf)
 
 ---
 
-## 📊 Key Insights
+## 📊 KEY INSIGHTS
 
-- Total cargo increased by **2.4%**
-- Incoming cargo **decreased**
-- Outgoing cargo **increased**
-- Tanker cargo showed **growth (energy demand stable)**
-- Mumbai handled the **highest cargo volume**
+### 📈 Overall Impact
+- Total Cargo ↑ **+2.4%**
+- Incoming Cargo ↓
+- Outgoing Cargo ↑
+- Tanker Cargo ↑ (energy demand stable)
 
----
-
-## 📍 Port Insights
-
-- Mumbai → Highest activity
-- Chennai → Stable performance
+### 📍 Port-Level Insights
+- Mumbai → Highest volume
+- Chennai → Stable
 - Kochi → Most impacted
-- Kolkata → Lowest volume
+- Kolkata → Lowest activity
 
 ---
 
-## 📊 DAX Measures Used
+## 📊 DAX MEASURES USED
 
-\`\`\`DAX
+```DAX
 Total Cargo = SUM(port_cargo[cargo_value])
 
 Cargo Before =
@@ -113,23 +127,42 @@ CALCULATE(
 
 Trade Balance =
 [Incoming Cargo] - [Outgoing Cargo]
-\`\`\`
+
+## 💡 Business Impact
+
+- 📈 Export activity increased post disruption  
+- 📦 Container cargo shows clear supply chain stress  
+- ⛽ Tanker cargo remained stable → energy demand resilient  
+- ⚠️ Kochi identified as most vulnerable port  
+- 🏆 Mumbai demonstrated strongest operational resilience  
+
+---
+
+## 🎯 Recruiter Takeaways
+
+✔ Strong SQL & Data Modeling skills  
+✔ Solved real-world business problem  
+✔ Converted raw data → actionable insights  
+✔ Built interactive Power BI dashboards  
+✔ Delivered complete end-to-end analytics pipeline  
 
 ---
 
 ## 🛠 Tech Stack
 
-- PostgreSQL
-- SQL
-- Power BI
-- DAX
-- GitHub
+| Layer | Technology |
+|------|------------|
+| 🗄 Database | PostgreSQL |
+| 🧠 Query Language | SQL |
+| 📊 Visualization | Power BI |
+| 📈 Analytics | DAX |
+| 🔧 Version Control | GitHub |
 
 ---
 
 ## 📁 Project Structure
 
-📦 supply-chain-cargo-analysis  
+📦 **supply-chain-cargo-analysis**  
 ┣ 📂 00_Documentation  
 ┣ 📂 01_Data  
 ┣ 📂 02_SQL  
@@ -142,17 +175,20 @@ Trade Balance =
 
 ## 💡 What I Learned
 
-- SQL-based data analysis  
-- Dashboard design using Power BI  
-- DAX for business metrics  
-- Data storytelling  
+- 🧹 Data cleaning & transformation  
+- 📊 SQL aggregation & analytical querying  
+- 📈 Power BI dashboard design  
+- ⚡ DAX for KPI calculations  
+- 📖 Data storytelling for business decisions  
 
 ---
 
 ## 👨‍💻 About Me
 
 **Vikash Kumar**  
-Aspiring Data Analyst  
+🎯 Aspiring Data Analyst  
 
 📧 vikash111107@gmail.com  
 🔗 https://github.com/Vikash4122002  
+
+---
