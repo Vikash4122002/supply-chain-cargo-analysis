@@ -49,16 +49,21 @@ Analyzing supply chain disruption impact on Indian port cargo.
 dax
 // Key Measures in Dashboard
 
-Total Cargo = SUM(port_cargo[total_cargo])
-Total Before = CALCULATE([Total Cargo], port_cargo[period] = "Before_Disruption")
-Total After = CALCULATE([Total Cargo], port_cargo[period] = "After_Disruption")
-Growth % = DIVIDE([Total After] - [Total Before], [Total Before]) * 100
+| **Total Cargo = SUM(port_cargo[total_cargo]) |
 
-Incoming After = CALCULATE([Total Cargo], port_cargo[flow_type] = "Incoming", port_cargo[period] = "After_Disruption")
-Outgoing After = CALCULATE([Total Cargo], port_cargo[flow_type] = "Outgoing", port_cargo[period] = "After_Disruption")
+| **Total Before = CALCULATE([Total Cargo], port_cargo[period] = "Before_Disruption") |
 
-Container % After = DIVIDE([Container After], [Total After]) * 100
-Tanker % After = DIVIDE([Tanker After], [Total After]) * 100
+| **Total After = CALCULATE([Total Cargo], port_cargo[period] = "After_Disruption") |
+
+| **Growth % = DIVIDE([Total After] - [Total Before], [Total Before]) * 100 |
+
+| **Incoming After = CALCULATE([Total Cargo], port_cargo[flow_type] = "Incoming", port_cargo[period] = "After_Disruption") |
+
+| **Outgoing After = CALCULATE([Total Cargo], port_cargo[flow_type] = "Outgoing", port_cargo[period] = "After_Disruption") |
+
+| **Container % After = DIVIDE([Container After], [Total After]) * 100 |
+
+| **Tanker % After = DIVIDE([Tanker After], [Total After]) * 100 |
 
 ---
 
