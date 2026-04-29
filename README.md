@@ -69,7 +69,7 @@ Supply chain disruptions affect:
 
 ## 📄 FULL REPORT (DOWNLOAD)
 
-👉 [Download PDF](./04_Outputs/Reports/SUPPLY%20CHAIN%20CARGO%20ANALYSIS.pdf)
+👉 [Download PDF](https://github.com/Vikash4122002/supply-chain-cargo-analysis/blob/main/04_Outputs/Reports/SUPPLY%20CHAIN%20CARGO%20ANAYLSIS.pdf)
 
 ---
 
@@ -91,7 +91,6 @@ Supply chain disruptions affect:
 
 ## 📊 DAX MEASURES USED
 
-```DAX
 Total Cargo = SUM(port_cargo[cargo_value])
 
 Cargo Before =
