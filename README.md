@@ -36,23 +36,55 @@ Analyzing supply chain disruption impact on Indian port cargo.
 
 ---
 
-# 🔑 Key Insights
+## 🛠️ TECH STACK
 
-✔ Cargo increased by **2.4%**  
-✔ Outgoing trade increased  
-✔ Tanker cargo surged  
-✔ Mumbai is dominant port  
-
----
-
-# 🛠 Tech Stack
-
-- PostgreSQL  
-- SQL  
-- Power BI  
+| Layer | Technology |
+|-------|------------|
+| **Database** | PostgreSQL 16 |
+| **Query Language** | SQL (CTEs, Window Functions, Aggregations) |
+| **Visualization** | Power BI Desktop |
+| **Analytics** | DAX Measures |
+| **Version Control** | Git & GitHub |
 
 ---
 
+## 🔑 KEY INSIGHTS
+
+### 📈 Overall Impact
+| Metric | Before | After | Change |
+|--------|--------|-------|--------|
+| Total Cargo | 20.54M | 21.03M | **+2.4% ▲** |
+| Incoming | 13M | 12M | **-7.7% ▼** |
+| Outgoing | 8M | 9M | **+12.5% ▲** |
+
+### 🚢 Cargo Type Impact
+| Cargo Type | Before | After | Change | Insight |
+|------------|--------|-------|--------|---------|
+| **Container** | 13.48M | 13.80M | +2.4% | Supply chain backbone |
+| **Tanker** | 1.77M | 1.82M | +2.8% | Energy demand resilient |
+| **Dry Bulk** | 5.29M | 5.41M | +2.3% | Industrial needs steady |
+
+### 📍 Port Performance
+| Port | Before | After | Growth | Impact Level |
+|------|--------|-------|--------|---------------|
+| Mumbai | 8.2M | 8.4M | +2.4% | 🇮🇳 Most Active |
+| Chennai | 6.5M | 6.6M | +1.5% | Stable |
+| Kolkata | 3.2M | 3.1M | -3.1% | Slight Decline |
+| Kochi | 3.6M | 2.9M | -19.4% | Most Impacted |
+
+---
+
+## 💡 BUSINESS IMPACT & RECOMMENDATIONS
+
+### What This Analysis Reveals
+
+| Finding | Business Implication |
+|---------|---------------------|
+| **Cargo shifted from incoming to outgoing** | Ports prioritized exports post-disruption |
+| **Container cargo most affected** | Supply chain disruption visible |
+| **Tanker cargo remained stable** | Energy demand is resilient |
+| **Kochi most impacted (-19%)** | Geographically vulnerable port |
+| **Mumbai maintained growth (+2.4%)** | Major port with better infrastructure |
 # 👨‍💻 About Me
 
 Vikash Kumar  
