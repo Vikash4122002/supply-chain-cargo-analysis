@@ -29,8 +29,6 @@ Analyzing supply chain disruption impact on Indian port cargo.
 
 # 📄 Full Report
 
-# 📄 Full Report
-
 👉 [View & Download Report](https://github.com/Vikash4122002/supply-chain-cargo-analysis/blob/main/04_Outputs/Reports/SUPPLY%20CHAIN%20CARGO%20ANAYLSIS.pdf)
 
 
