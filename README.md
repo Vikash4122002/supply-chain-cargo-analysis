@@ -45,6 +45,22 @@ Analyzing supply chain disruption impact on Indian port cargo.
 | **Version Control** | Git & GitHub |
 
 ---
+📊 DAX MEASURES USED
+dax
+// Key Measures in Dashboard
+
+Total Cargo = SUM(port_cargo[total_cargo])
+Total Before = CALCULATE([Total Cargo], port_cargo[period] = "Before_Disruption")
+Total After = CALCULATE([Total Cargo], port_cargo[period] = "After_Disruption")
+Growth % = DIVIDE([Total After] - [Total Before], [Total Before]) * 100
+
+Incoming After = CALCULATE([Total Cargo], port_cargo[flow_type] = "Incoming", port_cargo[period] = "After_Disruption")
+Outgoing After = CALCULATE([Total Cargo], port_cargo[flow_type] = "Outgoing", port_cargo[period] = "After_Disruption")
+
+Container % After = DIVIDE([Container After], [Total After]) * 100
+Tanker % After = DIVIDE([Tanker After], [Total After]) * 100
+
+---
 
 ## 🔑 KEY INSIGHTS
 
@@ -83,6 +99,20 @@ Analyzing supply chain disruption impact on Indian port cargo.
 | **Tanker cargo remained stable** | Energy demand is resilient |
 | **Kochi most impacted (-19%)** | Geographically vulnerable port |
 | **Mumbai maintained growth (+2.4%)** | Major port with better infrastructure |
+
+
+### 🎯 Actionable Recommendations
+| **Diversify container routes away from most impacted ports |
+
+| **Increase buffer stock for container cargo |
+
+| **Monitor tanker supply chains - they're critical |
+
+| **Regional port contingency planning |
+
+| **Real-time cargo tracking during disruptions |
+
+
 # 👨‍💻 About Me
 
 Vikash Kumar  
